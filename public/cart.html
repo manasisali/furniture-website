@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online store : cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+
+
+</head>
+
+<body>
+        <nav class="navbar bg">
+            <ul class="links-container">
+                <li class="link-item"><a href="index.html" class="link active">home</a></li>
+                <li class="link-item"><a href="product.html" class="link">product</a></li>
+                <li class="link-item"><a href="#" class="link">about</a></li>
+                <li class="link-item"><a href="#" class="link">contact</a></li>
+            </ul>
+            <div class="user-interactions">
+               
+                <div class="user">
+                   <a href ="login.html"><img src="img/user.png" class="user-icon" alt=""></a>
+                </div>
+           </nav>
+
+           <div class="form">
+             <h1 class="heading">checkout</h1>
+             <p class="text">delivery address</p>
+
+             <input type="text" id="address" placeholder="address"><br>
+             <input type="text" id="street" placeholder="street">
+             <div class="three-input-container">
+                <input type="text" id="city" placeholder="city">
+                <input type="text" id="state" placeholder="state">
+                <input type="text" id="pincode" placeholder="pincode">
+             </div>
+           </div>
+
+           <div class="cart-section">
+            <div class="product-list">
+                <p class="section-heading">your cart</p>
+                <div class="cart-container">
+                    <!-- <img src="img/empty.png" class="empty-img" > -->
+                    <!-- <div class="sm-product">
+                        <img src="img/product-1.png" class="sm-product-img">
+                        <div class="sm-tetx">
+                            <p class="sm-product-name">Product</p>
+                            <p class="sm-des">short des</p>
+                        </div>
+                        <div class="item-counter">
+                            <button class="counter-btn decrement">-</button>
+                            <p class="item-count">1</p>
+                            <button class="counter-btn increment">+</button>
+                        </div>
+                        <p class="sm-price">Rs.1500</p>
+                        <button class="sm-delete-btn"><img src="img/cross.png"></button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="checkout-section">
+                <div class="checkout-box">
+                <p class="text">your total bill</p>
+                <h1 class="bill">Rs.00</h1>
+                <a><button class="place-order-btn">place order</button></a>
+                </div>
+            </div>
+           </div>
+
+           
+    <script src="js/common.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <!-- <script src="js/detail.js"></script> -->
+</body>
+</html>

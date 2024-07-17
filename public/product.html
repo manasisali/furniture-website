@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- let product_page_link = "product.html"
+    let login_page_link = "login.html"
+    let cart_page_link="cart.html" -->
+   
+    <div class="container">
+        <nav class="navbar bg">
+            <ul class="links-container">
+                <li class="link-item"><a href="index.html" class="link active">home</a></li>
+                <li class="link-item"><a href="product.html" class="link">product</a></li>
+                <li class="link-item"><a href="#" class="link">about</a></li>
+                <li class="link-item"><a href="#" class="link">contact</a></li>
+            </ul>
+            <div class="user-interactions">
+                <!-- <div class="cart">
+                    <a href ="cart.html"><img src="img/cart.png" class="cart-icon" alt=""></a>
+                    <span class="cart-item-count">00</span>
+                </div> -->
+        
+                <div class="user">
+                   <a href ="login.html"><img src="img/user.png" class="user-icon" alt=""></a> 
+                </div>
+            </div>
+        </nav>
+        <div class="s-title">PRODUCT LIST</div>
+        <div class="listproduct"></div>
+    </div>
+    
+
+
+    <script >
+        
+        let product = null;
+        fetch('../product.json')
+        .then(response => response.json())
+        .then(data => {
+            product = data;
+            console.log(product);
+            addDataToHtml();
+        })
+
+        let listproduct = document.querySelector('.listproduct');
+        function addDataToHtml(){
+           product.forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = './detail.html?id=' +product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = `
+                 <img src= "${product.image}">
+                 <h2>${product.name}</h2>
+                 <div class="price">${product.price}</div>
+                    `;
+
+            listproduct.appendChild(newProduct);
+            
+           });
+        }
+    
+    </script>
+    <script src="js/detail.js"></script>
+</body>
+</html>
+

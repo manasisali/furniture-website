@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Varela Round', sans-serif;
+    }
+    /* .add-padding-top {
+  padding-bottom: 100%;
+} */
+
+    .btn.btn-primary.btn-block {
+    background-color: #007BFF; /* Change to your desired primary color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 15px; /* Adjust the padding as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    width: 200px;
+   margin-left: 45%;
+   margin-top: 20%;
+  
+    transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.btn.btn-primary.btn-block:hover {
+    background-color: #0056b3; /* Change to a slightly darker color for hover effect */
+}
+
+    .modal-confirm {
+      color: #636363;
+      width: 325px;
+    }
+    .modal-confirm .modal-content {
+      padding: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+    .modal-confirm .modal-header {
+      border-bottom: none;
+      position: relative;
+    }
+    .modal-confirm h4 {
+      text-align: center;
+      font-size: 26px;
+      margin: 30px 0 -15px;
+    }
+    .modal-confirm .form-control, .modal-confirm .btn {
+      min-height: 40px;
+      border-radius: 3px;
+    }
+    .modal-confirm .close {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+    }
+    .modal-confirm .modal-footer {
+      border: none;
+      text-align: center;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+    .modal-confirm .icon-box {
+      color: #fff;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: -70px;
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      z-index: 9;
+      background: #82ce34;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+    .modal-confirm .icon-box i {
+      font-size: 58px;
+      position: relative;
+      top: 3px;
+    }
+    .modal-confirm.modal-dialog {
+      margin-top: 80px;
+    }
+    .modal-confirm .btn {
+      color: #fff;
+      border-radius: 4px;
+      background: #82ce34;
+      text-decoration: none;
+      transition: all 0.4s;
+      line-height: normal;
+      border: none;
+    }
+    .modal-confirm .btn:hover, .modal-confirm .btn:focus {
+      background: #6fb32b;
+      outline: none;
+    }
+    .trigger-btn {
+      display: inline-block;
+      margin: 100px auto;
+    }
+  </style>
+</head>
+<body>
+
+
+  
+  
+              <div class="form-group col-sm-12 add-padding-top">
+                <!-- <button type="button" class="btn btn-primary btn-block" onclick="paymentProcess()">Proceed</button> -->
+                <!-- <a href="#" class="btn btn-primary btn-block" onclick="paymentProcess()">Proceed</a> -->
+                <!-- <a href="contact.html" class="btn btn-primary btn-block" onclick="return paymentProcess()">Proceed</a> -->
+                <!-- <a href="contact.html" class="btn btn-primary btn-block">Proceed</a> -->
+                <!-- <a href="#" class="btn btn-primary btn-block" id="proceedButton">Proceed</a> -->
+              </div>
+
+
+
+  <!-- Modal HTML -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="icon-box">
+            <i class="material-icons">&#xE876;</i>
+          </div>
+          <h4 class="modal-title">Awesome!</h4>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">Your booking has been confirmed. Check your email for details.</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+
+        <p><strong>Address:</strong>562 Weellington Road,Street 32,San Francisco</p>
+         <p><strong>Phone:</strong>+01 2222 365 /(+91)01 1345 6789</p>
+         <p><strong>Hours:</strong>10:00 - 18.00, Mon - Sat</p>
+         <div class="follow">
+         <h4>Follow us</h4>
+         <div class="icon">
+           <i class="fab fa-facebook"></i>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-instagram"></i>
+           <i class="fab fa-pointerest-p"></i>
+           <i class="fab fa-youtube"></i>
+
+         </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="">About us</a>
+        <a href="">Delivery Information</a>
+        <a href="">Privacy policy</a>
+        <a href="">Terms & Condition</a>
+        <a href="">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>Account</h4>
+        <a href="">Sign In</a>
+        <a href="">View Cart</a>
+        <a href="">My Wishlist</a>
+        <a href="">Track My Order</a>
+        <a href="">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="img/pay/pay.png" alt="">
+        
+    </div>
+    <div class="copyright">
+        <p>© 2023, Making E-commerce Website</p>
+    </div>
+</footer> -->
+
+
+<script src="script.js"></script>
+
+  <!-- JavaScript libraries/scripts here -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Firebase SDK initialization -->
+  <script src="/__/firebase/7.12.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.12.0/firebase-database.js"></script>
+  <script src="/__/firebase/init.js"></script>
+
+  <!-- Razorpay and your custom JavaScript -->
+  <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="js/payment.js"></script> -->
+</body>
+</html>

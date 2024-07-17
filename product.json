@@ -1,0 +1,106 @@
+[
+    {
+        "id":1,
+        "name": "Orange sofa",
+        "price": 15000,
+        "image": "img/sofa-1.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":2,
+        "name": "Green sofa",
+        "price": 16000,
+        "image": "img/sofa-2.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":3,
+        "name": "stylish sofa",
+        "price": 17000,
+        "image": "img/sofa-3.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":4,
+        "name": "mini sofa",
+        "price": 12000,
+        "image": "img/sofa-4.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":5,
+        "name": "sofa",
+        "price": 18000,
+        "image": "img/sofa-5.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":6,
+        "name": "black sofa",
+        "price": 13000,
+        "image": "img/sofa-6.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":7,
+        "name": "Family sofa",
+        "price": 11000,
+        "image": "img/sofa-7.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":8,
+        "name": "Chair sofa",
+        "price": 14000,
+        "image": "img/sofa-8.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":9,
+        "name": "dulex sofa",
+        "price": 13000,
+        "image": "img/sofa-9.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":10,
+        "name": "hanging lights",
+        "price": 1500,
+        "image": "img/product-1.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":11,
+        "name": "Stool",
+        "price": 1000,
+        "image": "img/product-2.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":12,
+        "name": "storage",
+        "price": 2500,
+        "image": "img/product-3.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    },
+
+    {
+        "id":13,
+        "name": "lux sofa",
+        "price": 19000,
+        "image": "img/product-4.png",
+        "description": "kadukYWB,FNoUQteedavdsmnsdysaud;fnzm .,mcvn jgsuyu;akk.nsmnytujbfn"
+    }
+]
+
